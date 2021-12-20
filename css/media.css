@@ -1,0 +1,139 @@
+@media (max-width: 1024px) {
+  .container {
+    width: 90%;
+  }
+
+  #hero .hero--video {
+    width: 972px;
+    height: 550px;
+  }
+
+  #program .slider__item--img {
+    width: 300px;
+    height: 230px;
+  }
+}
+@media (max-width: 992px) {
+  .container {
+    width: 90%;
+  }
+
+  #hero .hero--video {
+    width: 880px;
+    height: 500px;
+  }
+
+  #program .program__title {
+    font-size: 26px;
+  }
+  #program .slider__item--title {
+    font-size: 20px;
+  }
+  #program .slider__item--img {
+    width: 280px;
+    height: 210px;
+  }
+}
+@media (max-width: 768px) {
+  .container {
+    width: 90%;
+  }
+
+  #header .burger {
+    display: flex;
+    background: rgba(0, 0, 0, 0.4);
+  }
+  #header .header {
+    position: relative;
+  }
+  #header .header--menu {
+    z-index: 999;
+    background: rgba(0, 0, 0, 0.4);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    margin: 0 auto;
+  }
+  #header .header__nav, #header .header__btn {
+    display: none;
+  }
+
+  #hero .hero__title {
+    font-size: 36px;
+  }
+  #hero .hero--video {
+    width: 650px;
+  }
+}
+@media (max-width: 576px) {
+  .container {
+    width: 90%;
+  }
+
+  #hero .hero--video {
+    width: 500px;
+    height: 400px;
+  }
+  #hero .hero--video__btn {
+    width: 70px;
+    height: 70px;
+  }
+  #hero .hero--video__btn--play {
+    width: 29px;
+  }
+
+  #program .slider__item--img {
+    width: 240px;
+    height: 190px;
+  }
+}
+@media (max-width: 415px) {
+  .container {
+    width: 90%;
+  }
+
+  #hero .hero__title {
+    font-size: 29px;
+  }
+  #hero .hero--video {
+    width: 335px;
+    height: 250px;
+  }
+
+  #program .program__title {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+}
+@media (max-width: 376px) {
+  .container {
+    width: 90%;
+  }
+
+  #hero .hero--video {
+    width: 300px;
+    height: 230px;
+  }
+}
+@media (max-width: 320px) {
+  .container {
+    width: 90%;
+  }
+
+  #hero .hero--video {
+    width: 270px;
+    height: 200px;
+  }
+  #hero .hero__buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #hero .hero__buttons button {
+    margin: 10px 0;
+  }
+}
+
+/*# sourceMappingURL=media.css.map */

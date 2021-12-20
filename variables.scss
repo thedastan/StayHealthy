@@ -1,0 +1,52 @@
+$ff: "Poppins", sans-serif;
+$bgColor: #161D2F;
+$Laptop: 1024px;
+$ultrabook: 992px;
+$Ipad: 768px;
+$BigPhone: 576px;
+$Iphone7Plus: 415px;
+$Iphone7: 376px;
+$Iphone5s: 320px;
+
+
+%btn {
+  background: linear-gradient(97.1deg, #3043A9 11.99%, #1F629F 96.6%);
+  border-radius: 28px;
+  padding: 8px 25px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+  /* identical to box height */
+  border: none;
+  text-align: center;
+  text-transform: capitalize;
+
+  color: #FFFFFF;
+}
+
+%btn:hover {
+  background: linear-gradient(97.1deg, #717591 11.99%, #3d29cc 96.6%);
+  transform: translateY(-10px);
+  transition: 0.7s;
+
+}
+
+%btn2 {
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 27px;
+  /* identical to box height */
+  padding: 8px 25px;
+  text-align: center;
+  text-transform: capitalize;
+  border: 1px solid #FFFFFF;
+  box-sizing: border-box;
+  border-radius: 28px;
+  color: #FFFFFF;
+  background: transparent;
+}
+
+%btn2:hover {
+  background: rgba(255, 255, 255, 0);
+  border: 1px dashed #FFFFFF;
+}

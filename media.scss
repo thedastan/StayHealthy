@@ -1,0 +1,209 @@
+@import "variables";
+
+@media (max-width: $Laptop) {
+  .container {
+    width: 90%;
+  }
+  #hero {
+    .hero {
+      &--video {
+        width: 972px;
+        height: 550px;
+      }
+    }
+  }
+  #program {
+
+    .slider {
+
+      &__item {
+        &--img {
+          width: 300px;
+          height: 230px;
+        }
+      }
+    }
+
+  }
+}
+
+@media (max-width: $ultrabook) {
+  .container {
+    width: 90%;
+  }
+  #hero {
+    .hero {
+      &--video {
+        width: 880px;
+        height: 500px;
+
+      }
+    }
+  }
+  #program {
+    .program {
+      &__title {
+        font-size: 26px;
+      }
+
+    }
+
+    .slider {
+
+      &__item {
+        &--title {
+          font-size: 20px;
+        }
+
+        &--img {
+          width: 280px;
+          height: 210px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: $Ipad) {
+  .container {
+    width: 90%;
+  }
+  #header {
+    .burger {
+      display: flex;
+      background: rgba(0, 0, 0, 0.4);
+
+    }
+
+    .header {
+      position: relative;
+
+      &--menu {
+        z-index: 999;
+        background: rgba(0, 0, 0, 0.4);
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        top: 0;
+        margin: 0 auto;
+
+      }
+
+
+      &__nav, &__btn {
+        display: none;
+      }
+    }
+  }
+  #hero {
+    .hero {
+      &__title {
+        font-size: 36px;
+      }
+
+      &--video {
+        width: 650px;
+      }
+    }
+  }
+}
+
+@media (max-width: $BigPhone) {
+  .container {
+    width: 90%;
+  }
+  #hero {
+    .hero {
+      &--video {
+        width: 500px;
+        height: 400px;
+
+        &__btn {
+          width: 70px;
+          height: 70px;
+
+          &--play {
+            width: 29px;
+
+          }
+        }
+      }
+    }
+  }
+  #program {
+    .slider {
+      &__item {
+        &--img {
+          width: 240px;
+          height: 190px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: $Iphone7Plus) {
+  .container {
+    width: 90%;
+  }
+  #hero {
+    .hero {
+      &__title {
+        font-size: 29px;
+      }
+
+      &--video {
+        width: 335px;
+        height: 250px;
+      }
+    }
+  }
+
+  #program {
+    .program {
+      &__title {
+        font-size: 18px;
+        margin-bottom: 20px;
+      }
+    }
+  }
+}
+
+@media (max-width: $Iphone7) {
+  .container {
+    width: 90%;
+  }
+  #hero {
+    .hero {
+      &--video {
+        width: 300px;
+        height: 230px;
+      }
+    }
+  }
+}
+
+@media (max-width: $Iphone5s) {
+  .container {
+    width: 90%;
+  }
+  #hero {
+    .hero {
+      &--video {
+        width: 270px;
+        height: 200px;
+      }
+
+      &__buttons {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        button {
+          margin: 10px 0;
+        }
+      }
+    }
+  }
+}

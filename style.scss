@@ -1,0 +1,270 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+@import "reset";
+@import "variables";
+
+
+body {
+  font-family: $ff;
+}
+
+.container {
+  width: 1140px;
+  margin: auto;
+}
+
+//HEADER
+#header {
+  position: absolute;
+  width: 100%;
+  padding-top: 40px;
+
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &__logo {
+      font-weight: 800;
+      font-size: 24px;
+      line-height: 36px;
+      /* identical to box height */
+      color: #FFFFFF;
+    }
+
+    &__nav {
+      &--item {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 21px;
+        /* identical to box height, or 150% */
+        text-transform: capitalize;
+
+        color: #FFFFFF;
+        margin: 0 10px;
+      }
+    }
+
+    &__btn {
+      @extend %btn
+    }
+
+
+  }
+  .burger {
+    display: none;
+    width: 40px;
+    height: 30px;
+    position: relative;
+
+    &--line {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      height: 2px;
+      background: #FFFFFF;
+      margin-top: 1px;
+
+    }
+
+    &--line:before {
+      display: flex;
+      justify-content: center;
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 2px;
+      top: 12px;
+      background: #FFFFFF;
+    }
+    &--line:after {
+      display: flex;
+      justify-content: center;
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 2px;
+      top: 25px;
+      background: #FFFFFF;
+    }
+  }
+}
+
+//HEADER
+
+//HERO
+#hero {
+  background: $bgColor;
+  min-height: 100vh;
+  padding-bottom: 40px;
+
+  .hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 150px;
+
+    &__theme {
+      font-size: 14px;
+      line-height: 21px;
+      /* identical to box height */
+
+      text-align: center;
+
+      color: #FFFFFF;
+    }
+
+    &__title {
+      font-weight: 700;
+      font-size: 62px;
+      line-height: 150%;
+      /* or 93px */
+
+      text-align: center;
+
+      color: #FFFFFF;
+    }
+
+    &__subtitle {
+      font-weight: 300;
+      font-size: 15px;
+      line-height: 30px;
+      /* or 200% */
+
+      text-align: center;
+      text-transform: capitalize;
+
+      color: #FFFFFF;
+    }
+
+    &__buttons {
+      padding-top: 40px;
+
+      &--join {
+        @extend %btn
+
+      }
+
+      &--con {
+        @extend %btn2
+      }
+    }
+
+    &__buttons button {
+      margin: 0 10px;
+    }
+
+    &--video {
+      background: url("../img/pexels-mart-production-8033013%201.png") no-repeat center/cover;
+      width: 1110px;
+      height: 600px;
+      position: relative;
+      margin-top: 40px;
+
+      &__btn {
+        background: rgba(0, 0, 0, 0.4);
+        border-radius: 50%;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        width: 83px;
+        height: 83px;
+        margin: auto;
+
+        &--play {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin: 20px auto;
+
+        }
+      }
+
+      &__btn:hover {
+        background: #000;
+        transition: 0.7s;
+      }
+    }
+  }
+
+}
+
+//HERO
+
+
+//PROGRAM
+#program {
+  padding-top: 40px;
+
+  .program {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    &__theme {
+      font-size: 14px;
+      line-height: 21px;
+      /* identical to box height */
+      text-transform: uppercase;
+      text-align: center;
+
+      color: #262626;
+    }
+
+    &__title {
+      font-weight: 600;
+      font-size: 40px;
+      line-height: 150%;
+      /* or 60px */
+
+      text-align: center;
+      text-transform: capitalize;
+
+      color: #222222;
+    }
+  }
+
+  .slider {
+    .slick-track {
+      overflow-x: hidden;
+    }
+
+    position: relative;
+
+    .slick-prev {
+      position: absolute;
+      font-size: 0;
+      background: url("../img/leff.svg") no-repeat center/15px;
+      width: 31px;
+      height: 28px;
+      border: none;
+      bottom: 170px;
+      left: -50px;
+      z-index: 3;
+    }
+
+    .slick-next {
+      font-size: 0;
+      background: url("../img/right.svg") no-repeat center/15px;
+      width: 31px;
+      height: 28px;
+      border: none;
+      bottom: 170px;
+      right: -30px;
+      position: absolute;
+      z-index: 3;
+    }
+
+
+    &__item {
+      &--img {
+        width: 350px;
+        height: 240px;
+      }
+    }
+  }
+}
+
+//PROGRAM
